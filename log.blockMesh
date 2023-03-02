@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 6-e29811f5dff8
+Exec   : blockMesh
+Date   : May 23 2022
+Time   : 17:56:21
+Host   : "a9709304fb95"
+PID    : 761
+I/O    : uncollated
+Case   : /data/windAroundBuildings
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/data/windAroundBuildings/system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 12.8 .. 12.8
+        j : 13.5 .. 13.5
+        k : 7 .. 7
+
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-30 -20 0) (290 250 70)
+  nPoints: 6006
+  nCells: 5000
+  nFaces: 15950
+  nInternalFaces: 14050
+----------------
+Patches
+----------------
+  patch 0 (start: 14050 size: 200) name: inlet
+  patch 1 (start: 14250 size: 200) name: outlet
+  patch 2 (start: 14450 size: 500) name: ground
+  patch 3 (start: 14950 size: 1000) name: frontAndBack
+
+End
+
